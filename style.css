@@ -1,0 +1,56 @@
+h1{
+
+    text-align: center;
+
+}
+
+
+.keys{
+
+    margin: 20px;
+    padding: 10px;
+}
+
+.row{
+
+    margin: 4px;
+    width: 100%;
+
+}
+
+.num_btn{
+
+    margin: 1px;
+    width: 80px;
+    height: 80px;
+    font-size: 20px;
+    border-radius: 10px;
+
+}
+
+.optr_btn{
+
+    margin: 1px;
+    width: 80px;
+    height: 80px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.input{
+
+    width: 95%;
+    height: 30px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 15px;
+
+}
+
+.container{
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
