@@ -23,8 +23,13 @@ Array.from(buttons).forEach((button)=>{
 
             case '=':
                 if(regEx1.test(str) && regEx3.test(str)){
-                    str = eval(str);
+
+                    try {
+                        str = eval(str);
                     document.querySelector('input').value = str;
+                    } catch (error) {
+                        document.querySelector('input').value = "try again!";  
+                    }
                 }else{
                     document.querySelector('input').value = "try again!";
                 }
@@ -46,3 +51,4 @@ Array.from(buttons).forEach((button)=>{
     })
 
 });
+
