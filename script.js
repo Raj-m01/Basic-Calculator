@@ -2,7 +2,9 @@ let str = "";
 
 let buttons = document.querySelectorAll(".btn");
 
-const regEx = new RegExp("([0-9]+[\\+\\-\\*\\/]{1}[0-9]+)+([\\+\\-\\*\\/]{1}[0-9]+)*");
+const regEx1 = new RegExp("[^a-z ^A-Z]*"); // check if it doesnt contain any alphabet
+const regEx3 = new RegExp("([0-9]$)"); //check end
+
 
 Array.from(buttons).forEach((button)=>{
 
@@ -20,11 +22,11 @@ Array.from(buttons).forEach((button)=>{
 
 
             case '=':
-                if(regEx.test(str)){
+                if(regEx1.test(str) && regEx3.test(str)){
                     str = eval(str);
                     document.querySelector('input').value = str;
                 }else{
-                    document.querySelector('input').value = "ERROR";
+                    document.querySelector('input').value = "try again!";
                 }
                 break;
         
@@ -44,4 +46,3 @@ Array.from(buttons).forEach((button)=>{
     })
 
 });
-
