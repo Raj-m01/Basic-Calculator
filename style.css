@@ -54,3 +54,16 @@ h1{
     justify-content: center;
     align-items: center;
 }
+
+.btn{
+
+    transition-duration: 0.2s;
+    cursor: pointer;
+    
+}
+
+.btn:hover{
+    background-color: #555555;
+    color: white;
+
+}
